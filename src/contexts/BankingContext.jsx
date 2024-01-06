@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, createContext, useContext } from "react";
+import { useState, createContext, useContext, useEffect } from "react";
 
 const BankingContext = createContext();
 
@@ -14,6 +14,10 @@ export const BankingProvider = ({ children }) => {
     "https://banking-system-api-with-mongo.onrender.com/api/v1/banking/users";
 
   const [users, setUsers] = useState([]);
+
+  useEffect(()=>{
+    fetchAllUsers();
+  },[])
 
   // Method to fetch all users from the banking api
   const fetchAllUsers = async () => {
