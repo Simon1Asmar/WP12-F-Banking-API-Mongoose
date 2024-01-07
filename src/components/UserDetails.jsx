@@ -4,7 +4,7 @@ import UserTable from './UserTable/UserTable'
 
 const UserDetails = () => {
   return (
-    <main>
+    <main className='page-section'>
       <CreateUserForm/>
       <UserTable/>
     </main>

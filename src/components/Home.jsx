@@ -11,12 +11,12 @@ const Home = () => {
   // },[users])
 
   return (
-    <>
+    <section className='page-section'>
       <button onClick={fetchAllUsers}>Fetch all users</button>
       {users.map((user)=>(
         <p key={user._id}>{user.firstName}</p>
       ))}
-    </>
+    </section>
   )
 }
 

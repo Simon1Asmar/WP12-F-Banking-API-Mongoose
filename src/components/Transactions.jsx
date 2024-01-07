@@ -4,7 +4,7 @@ import DepositCashForm from './DepositCashForm/DepositCashForm'
 
 const Transactions = () => {
   return (
-    <main>
+    <main className='page-section'>
       <TransactionForm/>
       <DepositCashForm/>
     </main>

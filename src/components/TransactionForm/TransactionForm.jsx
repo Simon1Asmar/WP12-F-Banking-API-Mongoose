@@ -19,7 +19,7 @@ const TransactionForm = () => {
   }
 
   return (
-    <section>
+    <section className="form-container">
       <h2>Transaction</h2>
       <form onSubmit={handleTransact}>
         <label htmlFor="fromUser">

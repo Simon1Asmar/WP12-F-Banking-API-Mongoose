@@ -25,7 +25,7 @@ const CreateUserForm = () => {
   }
 
   return (
-    <section>
+    <section className='form-container'>
       <h2>Create New User</h2>
       <form onSubmit={createFormSubmitted}>
 

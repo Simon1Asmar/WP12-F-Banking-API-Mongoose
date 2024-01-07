@@ -16,7 +16,7 @@ const DepositCashForm = () => {
   };
 
   return (
-    <section>
+    <section className="form-container">
       <h2>Deposit Cash</h2>
       <form onSubmit={handleDeposit}>
         <select name="userToDeposit" id="userToDeposit">
